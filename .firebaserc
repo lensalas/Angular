@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-page": {
+      "hosting": {
+        "mypage-3138b": [
+          "my-pager"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mypage-3138b"
+  }
+}

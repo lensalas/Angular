@@ -1,0 +1,40 @@
+<mat-toolbar class="header">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="toggleSideBar()">
+      <mat-icon class="menu">menu</mat-icon>
+    </button>
+
+
+
+
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="10px">
+        <li>
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-icon-button>
+            <mat-icon>help_outline</mat-icon>
+          </button>
+        </li>
+        <li>
+            <button mat-button [matMenuTriggerFor]="menu">
+              <mat-icon>person_outline</mat-icon>
+            </button>
+
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item *ngIf="!(afAuth.authState | async)">
+                <mat-icon>https</mat-icon>
+                Sign in </button>
+                <button mat-menu-item *ngIf="(afAuth.authState | async)" (click)="afAuth.auth.signOut()">
+                <mat-icon>exit_to_app</mat-icon>
+                Sign out
+              </button>
+            </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,73 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+background-color: white;
+
+
+
+}
+
+
+
+.container-fluid{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: monospace;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(255, 254, 254, 0.9);
+
+  flex-wrap: wrap;
+  border-radius: 40px;
+}
+
+.display-1{
+  font-family:  Gadget, sans-serif;
+  color: white;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-shadow: 0 0 10px black;
+}
+
+.logout{
+  padding-top: 10rem;
+}
+
+
+.card {
+  font-family: monospace;
+
+  background-image: url('/assets/img/background3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5rem;
+
+
+
+  border-radius: 40px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 10px 10px 10px rgba(7, 7, 7, 0.9);
+
+}
+
+.btn{
+
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+.card-body{
+  font-family: monospace;
+
+  border-radius: 50px;
+
+
+  margin-top: 20px;
+
+}

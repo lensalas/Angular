@@ -1,0 +1,39 @@
+<mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
+  <mat-grid-tile>
+
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <hr class="my-4">
+  <p> It has roots in a
+    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+    discovered the undoubtable source.</p>
+      <br>
+      <div *ngIf=isCollapsed>
+        <button class="btn btn-primary btn-lg" (click)="toggleCollapse()">Register or Login</button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+  </mat-grid-tile>
+
+
+  <mat-grid-tile>
+
+    <div class="image">
+      <img src="/assets/img/development.png" class="img-fluid" alt="Responsive image">
+    </div>
+
+
+
+  </mat-grid-tile>
+
+
+</mat-grid-list>

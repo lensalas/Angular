@@ -1,0 +1,27 @@
+
+
+<mat-drawer-container>
+  <mat-drawer  #drawer mode="side" fixedInViewport="true"
+  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  [mode]="(isHandset$ | async) ? 'over' : 'slide'"
+  [opened]="sideBarOpen">
+
+
+
+    <app-sidebar (toggleSideBarForMe)="drawer.toggle()"></app-sidebar>
+
+
+  </mat-drawer>
+
+  <mat-drawer-content>
+
+      <app-header (toggleSideBarForMe)="drawer.toggle()"></app-header>
+
+      <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-drawer-content>
+
+
+</mat-drawer-container>
+
+

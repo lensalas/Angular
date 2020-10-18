@@ -1,0 +1,54 @@
+<mat-grid-list [cols]="breakpoint"  rowHeight="50rem" (window:resize)="onResize($event)">
+
+
+  <mat-grid-tile>
+
+      <div class="container-fluid jumbotron jumbotron-fluid">
+        <h1 class="h2">Wellcome</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <div >
+        <button class="btn btn-primary btn-lg" >Register</button>
+        </div>
+        <div>
+        <button class="btn btn-primary btn-lg" >Login</button>
+        </div>
+      </div>
+
+
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+
+<mat-card class="card">
+  <div *ngIf="!(afAuth.authState | async)">
+    <h1 class="display-1">Login</h1>
+
+    <button type="button" class="btn btn-danger btn-lg" (click)="onclick()">
+      <img src="/assets/img/google.png" style="width: 30px;"/> Login with Google
+    </button>
+  </div>
+  <div class="card-body">
+
+  <div *ngIf="afAuth.authState | async as user" class="logout">
+        <h1>
+          Logged in as <br>
+          <strong>{{ user.email }}</strong>
+        </h1>
+
+        <button type="button" class="btn btn-primary" (click)="afAuth.auth.signOut()">Logout</button>
+      </div>
+
+      <div *ngIf="!(afAuth.authState | async)">
+        <!-- omitted -->
+
+        <app-email-login></app-email-login>
+      </div>
+  </div>
+</mat-card>
+
+</mat-grid-tile>
+
+
+

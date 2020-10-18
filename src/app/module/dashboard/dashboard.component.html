@@ -1,0 +1,48 @@
+
+<div class="main">
+
+
+  <div class="headline">
+    <app-headliner></app-headliner>
+  </div>
+
+
+
+  <div class="aboutme">
+
+    <app-aboutme></app-aboutme>
+  </div>
+
+  <div class="portfolio">
+
+    <app-portfolio></app-portfolio>
+
+    </div>
+
+
+  <div class="post">
+
+    <app-posts></app-posts>
+  </div>
+
+
+        <div class="login">
+
+
+                  <div id="two" *ngIf=isCollapsed>
+                      <app-login-page *ngIf="!(afAuth.authState | async)"></app-login-page>
+
+
+                    </div>
+
+                  <div id="two" *ngIf=!isCollapsed>
+                   <app-email-login *ngIf="!(afAuth.authState | async)"></app-email-login>
+                  </div>
+          </div>
+
+
+ </div>
+
+
+
+

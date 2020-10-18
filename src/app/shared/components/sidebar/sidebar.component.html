@@ -1,0 +1,80 @@
+
+<mat-divider></mat-divider>
+
+<div  class="navbar" >
+
+    <mat-nav-list >
+
+      <!---->
+
+      <div *ngIf="!(afAuth.authState | async)"class="profile-card">
+         <img class="image2" src="/assets/img/menu.png">
+      </div>
+
+      <div  *ngIf="afAuth.authState | async as user"class="profile-card">
+
+        <div *ngIf="afAuth.authState | async as user" class="header">
+          <h2>{{ user.displayName}}</h2>
+       </div>
+
+       <div class="user-logged"*ngIf="afAuth.authState | async as user">
+          <img class="image1" src= "{{ user.photoURL }}">
+          <img class="image2" *ngIf="!user.photoURL === null" src="/assets/img/menu.png">
+        </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <h2 matSubheader class="subheader">Pages</h2>
+
+        <button type="button" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" routerLink="/" (click)="toggleSideBar()"> <mat-icon>home</mat-icon>Home</a>
+        </button>
+        <button type="button" *ngIf="!(afAuth.authState | async)" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" (click)="login()"><mat-icon>https</mat-icon>Login</a>
+        </button>
+        <button type="button" *ngIf="!(afAuth.authState | async)" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" (click)="login()"><mat-icon>ballot</mat-icon>Sign up</a>
+        </button>
+        <button type="button" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" routerLink="/profile" (click)="toggleSideBar()"><mat-icon>person_add</mat-icon>Profile</a>
+        </button>
+
+
+        <h2 matSubheader class="subheader">Tools</h2>
+
+        <button type="button" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+          <mat-icon>import_contacts</mat-icon>
+          Contacts
+          </a>
+        </button>
+
+        <button type="button" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+          <mat-icon>contact_phone</mat-icon>
+          Leads
+          </a>
+        </button>
+
+        <button type="button" *ngIf="(afAuth.authState | async)" class="btn btn-outline-dark btn-lg btn-block">
+          <a mat-list-item routerLinkActive="list-item-active" routerLink="/customers" (click)="afAuth.auth.signOut()"><mat-icon>exit_to_app</mat-icon>Sign out</a>
+        </button>
+
+        <br>
+
+        <a mat-list-item class="rate" routerLinkActive="list-item-active" routerLink="/customers" (click)="toggleSideBar()">
+          <mat-icon>sentiment_very_dissatisfied</mat-icon>
+          <mat-icon >sentiment_dissatisfied</mat-icon>
+          <mat-icon >sentiment_satisfied</mat-icon>
+          <mat-icon >sentiment_very_satisfied</mat-icon>
+        </a>
+
+
+
+        <mat-divider></mat-divider>
+
+       </mat-nav-list>
+
+</div>
+

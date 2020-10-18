@@ -1,0 +1,33 @@
+.jumbotron{
+ font-family: 'Poppins', sans-serif;
+ background: rgb(255, 255, 255);
+ text-align: center;
+ width: fit-content;
+ max-width: 480px;
+ height: 500px;
+ border-radius: 20px;
+ box-shadow: 5px 5px 10px rgba(255, 254, 254, 0.9);
+ margin-left: 5px;
+
+ .h2{
+   font-size: 60px;
+   padding-bottom: 30px;
+
+ }
+
+ .lead{
+   font-size: 25px;
+ }
+
+
+}
+
+
+.btn{
+  border-radius: 20px;
+  width: 200px;
+}
+
+.btn:hover{
+  box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.8);
+}
