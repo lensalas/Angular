@@ -1,0 +1,45 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="text">
+          <h2> Full Name: </h2> <div *ngIf="customer"> <h1>{{customer.fullName}}</h1> </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text">
+          <h2>  Company Name: </h2> <div *ngIf="customer"> <h1>{{customer.companyName}}</h1></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="text">
+          <h2> Job Title: </h2> <div *ngIf="customer"> <h1>{{customer.position}}</h1></div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="text">
+          <h2>Mobile:</h2> <div *ngIf="customer"> <h1>{{customer.mobile}}</h1></div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="text">
+            <div *ngIf="customer"> <h3> User-ID: {{customer.key}}</h3> </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div *ngIf="customer.key === null">
+      <div class="card">
+        <h1> Please enter your Contact details</h1>
+      </div>
+
+    </div>
+
+

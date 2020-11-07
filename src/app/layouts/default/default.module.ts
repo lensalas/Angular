@@ -22,7 +22,9 @@ import { EmailLoginComponent } from 'src/app/module/user/email-login/email-login
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-import { UserProfileComponent } from 'src/app/module/user-profile/user-profile.component';
+import { CustomerDetailsComponent } from 'src/app/module/customers/customer-details/customer-details.component';
+import { CustomersListComponent } from 'src/app/module/customers/customers-list/customers-list.component';
+import { CreateCustomerComponent } from 'src/app/module/customers/create-customer/create-customer.component';
 
 
 
@@ -42,7 +44,9 @@ import { UserProfileComponent } from 'src/app/module/user-profile/user-profile.c
     PortfolioComponent,
     StoryComponent,
     DataComponent,
-    UserProfileComponent
+    CustomerDetailsComponent,
+    CustomersListComponent,
+    CreateCustomerComponent
 
 
 

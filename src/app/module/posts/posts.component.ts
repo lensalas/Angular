@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -13,11 +14,23 @@ export class PostsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.breakpoint = (window.innerWidth <= 800) ? 1 : 2;
+    this.breakpoint = (window.innerWidth <= 800) ? 1 : 1;
   }
 
   onResize(event) {
-  this.breakpoint = (event.target.innerWidth <= 800) ? 1 : 2;
+  this.breakpoint = (event.target.innerWidth <= 800) ? 1 : 1;
   }
+
+  onNavigate1() {
+    window.open('https://github.com/lensalas', '_blank');
+  }
+  onNavigate2() {
+    window.open('https://www.linkedin.com/in/len-salas-arguello/', '_blank');
+  }
+  onNavigate3() {
+    window.open('https://www.linkedin.com/in/len-salas-arguello/', '_blank');
+  }
+
+
 
 }

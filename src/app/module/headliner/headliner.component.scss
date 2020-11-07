@@ -1,48 +1,102 @@
 
+
+.one {
+  text-align: center;
+  width: 100%;
+}
+.p {
+  text-shadow: inherit;
+}
+
+.image1 {
+  text-align: center;
+
+
+
+   animation: image1 3s;
+
+
+  @keyframes image1 {
+    0% { transform: translateY(-100%);}
+   100% { transform: translateY(0%); }
+
+  }
+
+}
 .jumbotron{
 
+
+  padding-top: 7rem;
+  text-align: center;
 
 
   font-family: 'Poppins', sans-serif;
   background-color:transparent;
-  text-align: left;
+
   cursor: pointer;
-  max-height: 70%;
-  max-width: 80%;
+
+  .blockquote {
+    padding-left: 18%;
+    padding-right: 18%;
+    text-align: center;
+  }
+
+
+
+
+  .i {
+  text-align: center;
+  width: 100%;
+  .fab {
+    padding: 5px;
+
+    animation: fab 2s;
+
+
+  }
+}
 
 
   .display-4{
-    font-size: 60px;
-  }
-
-
-
-  .h2{
-    font-size: 60px;
-
-
-  }
-
-
-  .lead{
-    font-size: 25px;
-  }
-
-
- }
-
-
- .btn{
+    font-style: bold;
+    font-family: fantasy;
+    text-align: center;
+  } .btn1{
    border-radius: 20px;
    width: 200px;
  }
 
- .btn:hover{
-   box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.8);
+ .btn1:hover{
+    box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.8);
+   transition: transform 500ms ease-in;
+  }
+
+ .fab:hover{
+  box-shadow: 5px 5px 5px rgba(13, 131, 241, 0.89);
+  border-radius: 35px;
+
  }
 
- .image{
-   width: 90%;
+ @keyframes fab {
+  0% { transform: translateX(-200%);}
+ 100% { transform: translateX(0%); }
 
- }
+}
+
+#imageThird {
+
+  animation: imageThird 3s;
+
+  @keyframes imageThird {
+
+    0% { transform: translateX(-100%);}
+   100% { transform: translateX(0%);
+  }
+
+
+
+  }
+}
+
+}
 

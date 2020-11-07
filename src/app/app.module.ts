@@ -22,7 +22,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 
 
@@ -35,6 +36,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
   declarations: [
     AppComponent,
     GoogleSigninDirective,
+
 
 
 
@@ -55,7 +57,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-
+    AngularFireDatabaseModule,
+    FontAwesomeModule,
 
 
 

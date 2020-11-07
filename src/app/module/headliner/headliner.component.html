@@ -1,23 +1,30 @@
-<mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)">
-  <mat-grid-tile>
+<mat-grid-list [cols]="breakpoint" rowHeight="61rem" (window:resize)="onResize($event)">
 
+  <mat-grid-tile class="one">
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-        <hr class="my-4">
-  <p> It has roots in a
-    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
-    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-    discovered the undoubtable source.</p>
-      <br>
-      <div *ngIf=isCollapsed>
-        <button class="btn btn-primary btn-lg" (click)="toggleCollapse()">Register or Login</button>
+      <p class="display-4">Welcome to my Porfolio</p>
+      <div class="container">
+        <div class="image1">
+        <img src="/assets/img/angular.png" #imageFirst alt="">
         </div>
+      </div>
+      <div class="i" #imageSecond>
+      <i (click)="onNavigate1()" class="fab fa-github fa-4x"></i>
+      <i (click)="onNavigate2()" class="fab fa-facebook fa-4x"></i>
+      <i (click)="onNavigate3()" class="fab fa-linkedin fa-4x"></i>
 
+    </div>
 
+    <hr class="my-4">
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">For the things we have to learn before we can do, we learn by doing.</p>
+      <br>
+      <footer class="blockquote-footer">Aristotle, <cite title="Source Title">The Nicomachean Ethics</cite></footer>
+    </blockquote>
 
-
+  <div *ngIf=isCollapsed style="text-align: center;">
+    <button class="btn1 btn-primary btn-lg" style="text-align: center;" (click)="toggleCollapse()">Learn more</button>
+  </div>
     </div>
 
 
@@ -27,13 +34,15 @@
 
   <mat-grid-tile>
 
-    <div class="image">
+
+    <div class="image" #imageThird>
       <img src="/assets/img/development.png" class="img-fluid" alt="Responsive image">
     </div>
 
 
-
   </mat-grid-tile>
+
+
 
 
 </mat-grid-list>

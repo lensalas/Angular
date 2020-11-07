@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { SnackService } from 'src/app/services/snack.service';
+import { SnackService } from '../services/snack.service';
+
 
 @Injectable({
   providedIn: 'root'

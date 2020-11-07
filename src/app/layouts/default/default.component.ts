@@ -21,7 +21,6 @@ constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit() { }
 
-
   sideBarToggler() {
     this.sideBarOpen = !this.sideBarOpen;
   }

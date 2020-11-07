@@ -12,4 +12,15 @@ export class StoryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onNavigate1() {
+    window.open('https://github.com/lensalas', '_blank');
+  }
+  onNavigate2() {
+    window.open('https://www.linkedin.com/in/len-salas-arguello/', '_blank');
+  }
+  onNavigate3() {
+    window.open('https://www.linkedin.com/in/len-salas-arguello/', '_blank');
+  }
+
+
 }

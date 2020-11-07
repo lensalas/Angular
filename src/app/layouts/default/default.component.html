@@ -1,5 +1,3 @@
-
-
 <mat-drawer-container>
   <mat-drawer  #drawer mode="side" fixedInViewport="true"
   [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -15,13 +13,11 @@
 
   <mat-drawer-content>
 
-      <app-header (toggleSideBarForMe)="drawer.toggle()"></app-header>
+      <app-header (toggleSideBarForMe)="drawer.toggle()"> </app-header>
 
-      <router-outlet></router-outlet>
+      <router-outlet> </router-outlet>
     <app-footer></app-footer>
-  </mat-drawer-content>
+    </mat-drawer-content>
 
 
 </mat-drawer-container>
-
-

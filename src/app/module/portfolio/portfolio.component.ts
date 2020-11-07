@@ -16,7 +16,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   onResize(event) {
-  this.breakpoint = (event.target.innerWidth <= 300) ? 1 : 4;
+  this.breakpoint = (event.target.innerWidth <= 300) ? 2 : 4;
   }
 
 }

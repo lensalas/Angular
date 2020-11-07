@@ -9,15 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataComponent implements OnInit {
 
+  breakpoint = 0;
+
   constructor() {
 
   }
 
 
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 1024) ? 1 : 2;
   }
 
-
+  onResize(event) {
+  this.breakpoint = (event.target.innerWidth <= 1024) ? 1 : 2;
+  }
 
 }

@@ -1,95 +1,145 @@
-<mat-grid-list [cols]="breakpoint" rowHeight="1.5:1" (window:resize)="onResize($event)">
+<mat-grid-list class="aboutme" [cols]="breakpoint" rowHeight="90rem" (window:resize)="onResize($event)">
 
-  <mat-grid-tile>
+  <mat-grid-tile class="about2">
 
+    <ul class="single-box">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
 
-       <div class="card1" style="width: auto;">
-        <img src="/assets/img/logistic.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h1 class="display-1 text-secondary">Supply Chain</h1>
-        </div>
+     <div class="container">
+            <div class="main-timeline">
+
+                              <!-- start experience section-->
+                              <div class="timeline">
+                                  <div class="icon"></div>
+                                  <div class="move">
+                                  <div class="date-content">
+                                      <div class="date-outer">
+                                          <span class="date">
+                                                  <span class="month">3 Years</span>
+                                          <span class="year">08-11</span>
+                                          </span>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-content">
+                                      <h5 class="title">Customer Service Center Road-Freight</h5>
+                                      <p class="description">
+                                        Processing commercial inquiries from customers and agents.
+                                        Purchase and sale of transport services.                                      </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end experience section-->
+
+                              <!-- start experience section-->
+                              <div class="timeline">
+                                  <div class="icon"></div>
+                                  <div class="move">
+                                  <div class="date-content">
+                                      <div class="date-outer">
+                                          <span class="date">
+                                                  <span class="month">1 Years</span>
+                                          <span class="year">11-12</span>
+                                          </span>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-content">
+                                      <h5 class="title">Supervisor Cargo Agent</h5>
+                                      <p class="description">
+                                        Responsible for the operational planning of 8 employees.
+                                        Planning and implementation of marketing promotions.
+                                        Planning and coordination of Road Feeder Service.
+                                        Deputy of Cargo Office Manager.
+                                      </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end experience section-->
+
+                              <!-- start experience section-->
+                              <div class="timeline">
+                                  <div class="icon"></div>
+                                  <div class="move">
+                                  <div class="date-content">
+                                      <div class="date-outer">
+                                          <span class="date">
+                                                  <span class="month">5 Years</span>
+                                          <span class="year">12-17</span>
+                                          </span>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-content">
+                                      <h5 class="title">Cargo Account Manager</h5>
+                                      <p class="description">
+                                        Responsible for the integration of a commercial and marketing plan for
+                                        Switzerland.
+                                        Responsible for a budget of between GBP 11mln-13mln pa.
+                                        Creation and implementation of marketing plans to increase market share.
+                                      </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end experience section-->
+
+                              <!-- start experience section-->
+                              <div class="timeline">
+                                  <div class="icon"></div>
+                                  <div class="move">
+                                  <div class="date-content">
+                                      <div class="date-outer">
+                                          <span class="date">
+                                                  <span class="month">3-4 Years</span>
+                                          <span class="year">2019</span>
+                                          </span>
+                                      </div>
+                                  </div>
+                                  <div class="timeline-content">
+                                      <h5 class="title">B.Sc. Computer Science</h5>
+                                      <p class="description">
+                                        I have started in 2019 my "Bachelor of Science Computer Science" at the International University in Bonn, Germany. It is a self-study program, which allows me to plan my work and study time according to my needs. My long-term goal is to combine my Freight-Forwarding and Sales skills with the ability to design new SaaS Products.
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end experience section-->
+                              <div class="container3">
+                                <div class="outer-div">
+                                  <div class="inner-div">
+                                    <div class="front">
+                                      <div class="front__bkg-photo"></div>
+                                      <div class="front__face-photo"></div>
+                                      <div class="front__text">
+                                        <h3 class="front__text-header">Len Salas Arguello</h3>
+                                        <p class="front__text-para"><i class="fas fa-map-marker-alt"></i>Remote Worker</p>
+
+                                        <span class="front__text-hover">Hover to Find Me</span>
+                                      </div>
+                                    </div>
+                                    <div class="back">
+                                      <div class="social-media-wrapper">
+                                        <i (click)="onNavigate1()" class="fab fa-github fa-4x"></i>
+                                        <i (click)="onNavigate2()" class="fab fa-facebook fa-4x"></i>
+                                        <i (click)="onNavigate3()" class="fab fa-linkedin fa-4x"></i>
+                                      </div>
+                                    </div>
+
+                                  </div>
+
+                                </div>
+
+                              </div>
+                        </div>
       </div>
-
-
-
 
   </mat-grid-tile>
 
-  <mat-grid-tile>
 
 
-        <div class="card1" style="width: auto;">
-         <img src="/assets/img/arrow.png" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h1 class="display-1 text-secondary">Computer Science</h1>
-          </div>
-        </div>
-
-
-
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-
-
-
-    <div class="card1" style="width: 26rem">
-       <img src="/assets/img/iot.jpg" class="card-img-top" alt="...">
-       <div class="card-body">
-         <h1 class="display-1 text-secondary">Innovation</h1>
-        </div>
-      </div>
-
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-
-
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="..." class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-</mat-grid-tile>
-
-<mat-grid-tile>
-
-
-     <div class="card1" style="width: auto;">
-      <img src="/assets/img/arrow.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h1 class="display-1 text-secondary">Computer Science</h1>
-       </div>
-     </div>
-
-
-
-</mat-grid-tile>
-
-<mat-grid-tile>
-
-
-
- <div class="card1" style="width: 26rem">
-    <img src="/assets/img/iot.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h1 class="display-1 text-secondary">Innovation</h1>
-     </div>
-   </div>
-
-</mat-grid-tile>
+</mat-grid-list>
 
 
